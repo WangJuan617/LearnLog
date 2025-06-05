@@ -6,7 +6,7 @@ SSM:spring,springmvc,mybatis
 
 SSM:spring,springmvc,mybatis.
 
-![屏幕截图 2025-05-15 212343](E:\githubcode\LearnLog\MyBatisimages\屏幕截图 2025-05-15 212343.png)
+![屏幕截图 2025-05-15 212343](E:\githubcode\LearnLog\MyBatis.assets\E%5Cgithubcode%5CLearnLog%5CMyBatisimages%5C%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-05-15%20212343.png)
 
 mybatis和JDBC的区别：框架，比自己封装的工具类更全面些。
 
@@ -78,7 +78,7 @@ MyBatis特性
 
 # 速成：
 
-![1747395432930](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747395432930.png)
+![1747395432930](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747395432930.png)
 
 表现层：页面展示的
 
@@ -88,7 +88,7 @@ MyBatis特性
 
 ---
 
-![1747395677567](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747395677567.png)
+![1747395677567](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747395677567.png)
 
 硬编码：字符串信息有可能会变动，维护性差一些。
 
@@ -96,7 +96,7 @@ MyBatis特性
 
 Mybatis简化：硬编码--->配置文件；操作繁琐---->自动完成
 
-![1747395836685](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747395836685.png)
+![1747395836685](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747395836685.png)
 
 步骤：查询user表中所有数据
 
@@ -192,9 +192,9 @@ sqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(input
 
 简化后期执行sql
 
-![1747451734624](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747451734624.png)
+![1747451734624](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747451734624.png)
 
-![1747452109792](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747452109792.png)
+![1747452109792](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747452109792.png)
 
 ## 详细：
 
@@ -260,7 +260,7 @@ List<User> selectAll();
 
 # Mybatis 核心配置文件
 
-![1747460089206](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747460089206.png)
+![1747460089206](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747460089206.png)
 
 mybatis-config.xml
 
@@ -360,9 +360,9 @@ typeAiases别名：最方便的是包扫描，不用在意resultType的大小写
 
 ---
 
-## 查询所有数据:
+## 1. 查询所有数据:
 
-![1747463286171](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747463286171.png)
+![1747463286171](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747463286171.png)
 
 能分析出来三件事：1，sql语句咋写。2，完成这个功能要不要参数。3，完成之后返回什么样的结果。
 
@@ -710,9 +710,9 @@ public interface BrandMapper {
 
 
 
-## 查看详情
+## 2.查看详情
 
-![1747470038128](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747470038128.png)
+![1747470038128](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747470038128.png)
 
 ```java
 public interface BrandMapper {
@@ -785,20 +785,22 @@ public void testSelectById()throws IOException {
 </mapper>
 ```
 
-![1747472923375](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747472923375.png)
+![1747472923375](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747472923375.png)
 
-## 条件查询
+## 3.多条件查询
+
+mybatis如何接受多个参数。
 
 1. 条件表达式
 2. 如何连接
 
-![1747473289449](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747473289449.png)
+![1747473289449](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747473289449.png)
 
 返回一个list的集合
 
 ​                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
-![1747472981580](C:\Users\27101\AppData\Roaming\Typora\typora-user-images\1747472981580.png)
+![1747472981580](E:\githubcode\LearnLog\MyBatis.assets\C%5CUsers%5C27101%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1747472981580.png)
 
 ​                          
 
@@ -810,7 +812,7 @@ public void testSelectById()throws IOException {
 
 自动的给参数占位符设置值。
 
-### 散装参数
+### （1）散装参数
 
 BrandMapper.xml
 
@@ -830,6 +832,8 @@ BrandMapper.xml
 
 
 BrandMapper.java
+
+@**Param**给到sql里面哪个占位符。
 
 ```java
 /*    条件查询
@@ -883,7 +887,7 @@ MybatisTest.java
 
 
 
-### 对象参数
+### （2）对象参数
 
 如果三个参数属于同一个对象的话，把他们封装成一个对象，把对象传递到方法selectByCondition里面来，
 
@@ -892,9 +896,759 @@ public interface BrandMapper {
 List <Brand> selectByCondition(Brand brand);
 ```
 
-
+把Brand数据封装成对象，传到方法里Brand brand。
 
 ```java
 public class MybatisTest {
+    
+@Test
+    public void testSelectByCondition()throws IOException {
+        //接收参数
+        int status =1;
+        String companyName="华为";
+        String brandName="华为";
+
+        //处理参数
+        companyName ="%"+companyName+"%";
+        brandName ="%"+brandName+"%";
+
+        //封装对象
+        Brand brand = new Brand();
+        brand.setStatus(status);
+        brand.setCompanyName(companyName);
+        brand.setBrandName(brandName);
+
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+//       List<Brand> brands = brandMapper.selectByCondition(status,companyName,brandName);
+       List<Brand>brands = brandMapper.selectByCondition(brand);
+    System.out.println(brands);
+        //5. 释放资源
+        sqlSession.close();
+    }
+}
+
 ```
+
+
+
+### （3）map集合参数
+
+```java
+public interface BrandMapper {
+List <Brand> selectByCondition(Map map);
+```
+
+map里键的名称和Mapper.xml里的参数占位符里的名称一致
+
+```java
+@Test
+    public void testSelectByCondition()throws IOException {
+        //接收参数
+        int status =1;
+        String companyName="华为";
+        String brandName="华为";
+
+        //处理参数
+        companyName ="%"+companyName+"%";
+        brandName ="%"+brandName+"%";
+
+        /*//封装对象
+        Brand brand = new Brand();
+        brand.setStatus(status);
+        brand.setCompanyName(companyName);
+        brand.setBrandName(brandName);
+*/
+
+    Map map = new HashMap();
+    map.put("status",status);
+    map.put("companyName",companyName);
+    map.put("brandName",brandName);
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+//       List<Brand> brands = brandMapper.selectByCondition(status,companyName,brandName);
+//       List<Brand>brands = brandMapper.selectByCondition(brand);
+    List<Brand>brands = brandMapper.selectByCondition(map);
+    System.out.println(brands);
+        //5. 释放资源
+        sqlSession.close();
+    }
+}
+```
+
+SQL语句设置多个参数有几种方式？
+
+1）散装参数：需要使用@parm（“SQL中的参数占位符名称”）
+
+2）实体类封装参数：只需要保证SQL中的参数名和实体类属性名对应上，即可设置成功
+
+3）map集合：只需要保证SQL中的参数名和map集合的键的名称对应上，即可设置成功。
+
+---
+
+如果三个条件，哪怕少一个条件都查不了。
+
+### （4）动态条件查询
+
+#### 多条件
+
+![1748936559738](E:\githubcode\LearnLog\MyBatis.assets\E%5Cgithubcode%5CLearnLog%5CMyBatis.assets%5C1748936559738.png)
+
+SQL语句会随着用户的输入或外部条件的变化而变化，我们称为动态SQL。
+
+---
+
+BrandMapper.xml
+
+```xml
+  <!--
+       动态条件查询
+       * if:条件判断
+            *test：逻辑表达式
+       *问题：
+            *(1)恒等式-过度一下，把每个条件过度一下-where 1=1
+            *(2)<where> 替换where关键字
+   -->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        <where>
+        <if test="status !=null">status =#{status}</if>
+        <if test="companyName !=null and companyName !=''">and company_name like #{companyName}</if>
+        <if test="brandName !=null and brandName !=''">and brand_name like #{brandName}</if>
+        </where>
+    </select>
+</mapper>
+```
+
+![1748938908966](E:\githubcode\LearnLog\MyBatis.assets\E%5Cgithubcode%5CLearnLog%5CMyBatis.assets%5C1748938908966.png)
+
+---
+
+#### 单条件
+
+![1748939309907](E:\githubcode\LearnLog\MyBatis.assets\E%5Cgithubcode%5CLearnLog%5CMyBatis.assets%5C1748939309907.png)
+
+1. 先写一个方法：
+
+```java
+public interface BrandMapper {
+/*
+* 单条件动态查询
+* */
+List <Brand> selectByConditionSingle(Brand brand);
+
+}
+
+```
+
+2. 
+
+```xml
+Brandmapper.xml
+<select id="selectByConditionSingle" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        where
+            <choose><!--相当于swich-->
+                <when test="status !=null">
+                    status =#{status}
+                </when><!--相当于case-->
+                <when test="companyName !=null and companyName !=''">
+                    and company_name like #{companyName}
+                </when>
+                <when test="brandName !=null and brandName !=''">
+                    and brand_name like #{brandName}
+                </when>
+                <otherwise><!--相当于default-->
+                    1=1
+                </otherwise>
+            </choose>
+    </select>
+</mapper>
+```
+
+或者这样：
+
+```xml
+  <select id="selectByConditionSingle" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        <where>
+        <choose><!--相当于swich-->
+            <when test="status !=null">
+                status =#{status}
+            </when><!--相当于case-->
+            <when test="companyName !=null and companyName !=''">
+                and company_name like #{companyName}
+            </when>
+            <when test="brandName !=null and brandName !=''">
+                and brand_name like #{brandName}
+            </when>
+
+        </choose>
+        </where>
+    </select>
+</mapper>
+```
+
+1. 测试方法
+
+```java
+
+@Test
+    public void testSelectByCondition()throws IOException {
+        //接收参数
+        int status =1;
+        String companyName="华为";
+        String brandName="华为";
+
+        //处理参数
+        companyName ="%"+companyName+"%";
+        brandName ="%"+brandName+"%";
+
+        //封装对象
+        Brand brand = new Brand();
+        brand.setStatus(status);
+//        brand.setCompanyName(companyName);
+//        brand.setBrandName(brandName);
+/*
+
+    Map map = new HashMap();
+    map.put("status",status);
+    map.put("companyName",companyName);
+    map.put("brandName",brandName);
+*/
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+//       List<Brand> brands = brandMapper.selectByCondition(status,companyName,brandName);
+//       List<Brand>brands = brandMapper.selectByCondition(brand);
+   List<Brand>brands = brandMapper.selectByConditionSingle(brand);
+    System.out.println(brands);
+        //5. 释放资源
+        sqlSession.close();
+    }
+}
+
+```
+
+
+
+## 4.添加
+
+![1748949517522](E:\githubcode\LearnLog\MyBatis.assets\1748949517522.png)
+
+在表tb_brand里面写字段名称，values写占位符。
+
+1. BrandMapper
+
+```java
+
+/*
+添加
+*/
+    void add(Brand brand);
+}
+
+```
+
+2. BrandMapper.xml
+
+```xml
+
+    <insert id="add">
+        insert into tb_brand(brand_name,company_name,ordered,description,status)
+        values (#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+```
+
+3. MyBatisTest.java
+
+```java
+
+    @Test
+    public void testAdd()throws IOException {
+        //接收参数
+        int status =1;
+        String companyName="华为手机";
+        String brandName="华为";
+        String description="手机中的战斗机";
+        int ordered=100;
+
+        //处理参数
+        companyName ="%"+companyName+"%";
+        brandName ="%"+brandName+"%";
+
+        //封装对象
+        Brand brand = new Brand();
+        brand.setStatus(status);
+       brand.setCompanyName(companyName);
+        brand.setBrandName(brandName);
+        brand.setDescription(description);
+        brand.setOrdered(ordered);
+/*
+
+    Map map = new HashMap();
+    map.put("status",status);
+    map.put("companyName",companyName);
+    map.put("brandName",brandName);
+*/
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+        brandMapper.add(brand);
+
+        //提交事务
+        sqlSession.commit();
+        //5. 释放资源
+        sqlSession.close();
+    }
+}
+
+```
+
+要开启手动提交事务。
+
+如果开启自动提交事务如下：
+
+```java
+        //2.  获取SqlSession对象
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        SqlSession sqlSession = sqlSessionFactory.openSession(true);//自动开启事务
+        SqlSession sqlSession = sqlSessionFactory.openSession(false);//手动开启事务
+        
+```
+
+**主键返回**
+
+![1748952738543](E:\githubcode\LearnLog\MyBatis.assets\1748952738543.png)
+
+插入数据的id值希望在某些地方用到。
+
+设置一个属性keyProperty指向这个对象addOrder的主键id的名称。
+
+![1748956549154](E:\githubcode\LearnLog\MyBatis.assets\1748956549154.png)
+
+指向id的属性名称。
+
+## 5.修改
+
+### 修改全部字段
+
+![1748956661232](E:\githubcode\LearnLog\MyBatis.assets\1748956661232.png)
+
+1. BrandMapper.java
+
+```java
+
+    /**
+     *修改
+     */
+    int update(Brand brand);
+```
+
+2. BrandMapper.xml
+
+```xml
+    <update id="update">
+        update tb_brand
+        set
+            brand_name=#{brandName},
+            company_name=#{companyName},
+            ordered =#{ordered},
+        description=#{description},
+        status=#{status}
+            where id =#{id};
+    </update>
+</mapper>
+```
+
+3. MyBatisTest.java
+
+```java
+
+    @Test
+    public void testUpdate()throws IOException {
+        //接收参数
+        int status =1;
+        String companyName="华为手机";
+        String brandName="华为";
+        String description="波导手机，手机中的战斗机";
+        int ordered=100;
+        int id =5;
+
+        //处理参数
+        companyName ="%"+companyName+"%";
+        brandName ="%"+brandName+"%";
+
+        //封装对象
+        Brand brand = new Brand();
+        brand.setStatus(status);
+        brand.setCompanyName(companyName);
+        brand.setBrandName(brandName);
+        brand.setDescription(description);
+        brand.setOrdered(ordered);
+        brand.setId(id);
+/*
+
+    Map map = new HashMap();
+    map.put("status",status);
+    map.put("companyName",companyName);
+    map.put("brandName",brandName);
+*/
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        SqlSession sqlSession = sqlSessionFactory.openSession(true);//自动开启事务
+        SqlSession sqlSession = sqlSessionFactory.openSession(false);//手动开启事务
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+        int count = brandMapper.update(brand);
+        System.out.println(count);
+
+        //提交事务
+        sqlSession.commit();
+        //5. 释放资源
+        sqlSession.close();}
+}
+
+```
+
+### 修改动态字段
+
+字段是不固定的，sql语句不能写死。
+
+![1749087908904](E:\githubcode\LearnLog\MyBatis.assets\1749087908904.png)
+
+想改哪个字段就改哪个字段。--------写上对应的if条件判断。
+
+BrandMapper.xml
+
+```xml
+
+
+    <update id="update">
+        update tb_brand
+        <set>
+            <if test="brandName != null and brandName!=''">
+                brand_name=#{brandName},
+            </if>
+        <if test="brandName != null and brandName!=''">
+            ordered =#{ordered},
+        </if>
+        <if test="brandName != null and brandName!=''">
+            description=#{description},
+        </if>
+        <if test="brandName != null and brandName!=''">
+            status=#{status}
+        </if>
+</set>
+            where id =#{id};
+    </update>
+</mapper>
+```
+
+## 6. 删除
+
+### 删除一个
+
+brandmapper.java
+
+```java
+
+    /**
+     *删除
+     */
+
+    void deleteById(int id);
+}
+```
+
+brandMapper.xml
+
+```xml
+
+    <delete id="deleteById">
+        select from tb_brand where id =#{id}
+
+    </delete>
+</mapper>
+```
+
+MybatisTest.java
+
+```java
+
+    @Test
+    public void testDeleteById()throws IOException {
+        //接收参数
+
+        int id =2;
+
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        SqlSession sqlSession = sqlSessionFactory.openSession(true);//自动开启事务
+        SqlSession sqlSession = sqlSessionFactory.openSession(false);//手动开启事务
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+        brandMapper.deleteById(id);
+        //5. 释放资源
+        sqlSession.close();}
+}
+
+```
+
+### ps:事务没提交（常见坑）
+
+MyBatis 中增删改操作默认需要**手动提交事务**（查询不用）。如果代码里只执行了删除方法，但没提交事务，数据库里数据不会真的删除。
+比如测试类里：
+
+```java
+// 错误写法：只执行删除，没提交
+sqlSession.delete("deleteById", 3); 
+// 正确：执行后提交事务
+sqlSession.commit(); 
+```
+
+### 批量删除
+
+![1749091553528](E:\githubcode\LearnLog\MyBatis.assets\1749091553528.png)
+
+BrandMapper.java
+
+```java
+
+    /**
+    *批量删除
+     *
+     * **/
+    void deleteById(int[] ids);
+}
+
+```
+
+BrandMapper.xml
+
+```xml
+ <!--
+    mybatis会将数组参数，封装为一个map集合
+    *默认：array = 数组。
+    *使用@parm注解，改变map集合的默认key的名称。
+    void deleteByIds(@param("ids) int[]ids);
+    separator=","-分隔符的意思。
+    open开始的时候是什么，close遍历完结束的时候拼什么。
+    -->
+    <delete id="deleteByIds">
+        DELETE from tb_brand where id
+        in(
+            <foreach collection="ids" item="id" separator="," open="（" close="）"
+            >
+                #{id}
+            </foreach>
+             )
+    </delete>
+</mapper>
+```
+
+MyBatisTest.java
+
+```java
+
+    @Test
+    public void testDeleteByIds()throws IOException {
+        //接收参数
+
+        int[] ids = {1,2,4};
+
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+        SqlSession sqlSession = sqlSessionFactory.openSession(false);//手动开启事务
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+        brandMapper.deleteByIds(ids);
+        //提交事务
+        sqlSession.commit();
+        //5. 释放资源
+        sqlSession.close();}
+}
+
+```
+
+
+
+# 参数传递
+
+![1749105385149](E:\githubcode\LearnLog\MyBatis.assets\1749105385149.png)
+
+UserMapper.java
+
+```java
+/*
+Mybatis 参数封装：
+*单个参数：
+	1.POJO类型：直接使用，属性名 和 参数占位符名称 一致
+	2.Map集合：直接使用，键名 和 参数占位符一致
+	3.Collection:封装为map集合，可以使用@param注解，替换map集合中默认的arg键名
+		map.put("arg0",collection集合)；
+		map.put("collection",collection集合)；
+	4.List：封装为map集合，可以使用@param注解，替换map集合中默认的arg键名
+		map.put("arg0",list集合)；
+		map.put("collection",list集合)；
+		map.put("list",list集合)；
+	5.Array:封装为map集合，可以使用@param注解，替换map集合中默认的arg键名
+		map.put("arg0",数组)
+		map.put("array",数组)
+	6.其他类型：直接使用
+*多个参数：封装为map集合，可以使用@param注解，替换Map集合中默认的arg键名。
+默认：
+	map.put("arg0",参数值1)
+	map.put("param1",参数值1)
+	map.put("param2",参数值2)
+	map.put("arg1",参数值2)
+sql语句：
+	username = #{arg0} and password = #{arg1}
+arg0,1换成param也行。
+
+---------------------------@param（"username"）
+map.put("username",参数值1)
+
+
+
+
+*/
+
+
+User select(@param("username")String username,@param("password")String password)
+    
+    
+1.
+User select(Collection collection)
+```
+
+UserMapperTest.java
+
+```java
+
+    @Test
+    public void testSelect()throws IOException {
+   
+
+        //1.获取sqlSessionFactory
+
+        //1. 加载mybatis的核心配置文件，获取 SqlSessionFactory
+        String resource = "mybatis-config.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+
+        //2.  获取SqlSession对象
+        SqlSession sqlSession = sqlSessionFactory.openSession(false);//手动开启事务
+
+        //3.  获取mapper接口的代理对象
+        BrandMapper brandMapper = sqlSession.getMapper(BrandMapper.class);
+
+        //4. 执行方法
+       String username = "zhangsan";
+       String password="123";
+
+       User user= UserMapper.select(new HashMap())
+        //提交事务
+        sqlSession.commit();
+        //5. 释放资源
+        sqlSession.close();}
+}
+```
+
+![1749129665678](E:\githubcode\LearnLog\MyBatis.assets\1749129665678.png)
+
+![1749129702056](E:\githubcode\LearnLog\MyBatis.assets\1749129702056.png)
+
+# 注解完成增删改查
+
+![1749129791864](E:\githubcode\LearnLog\MyBatis.assets\1749129791864.png)
+
+---
+
+![1749129933620](E:\githubcode\LearnLog\MyBatis.assets\1749129933620.png)
 
